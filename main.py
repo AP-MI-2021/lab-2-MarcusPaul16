@@ -26,7 +26,6 @@ calculeaza cel mai mare numar prim, aflat sub valoarea n
 '''
 def get_largest_prime_below(n):
     '''
-    Returneaza cel mai mare numar prim, mai mic decat parametrul n
     :param n: numar intreg
     :return: Returneaza numarul prim
     '''
