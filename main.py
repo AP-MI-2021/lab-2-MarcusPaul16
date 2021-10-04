@@ -46,6 +46,8 @@ def get_base_2(n:str):
     :param n: numarul in baza 10, sub forma de string
     :return: returneaza sub forma de string, numarul convertit in baza 2
     '''
+    if n == '0':
+        return '0'
     n = int(n)
     lst = []
     s = ''
@@ -62,9 +64,10 @@ def test_get_largest_prime_below():
     assert get_largest_prime_below(16) == 13
 
 def test_get_base_2():
-    assert get_base_2(10) == '1010'
-    assert get_base_2(123) == '1111011'
-    assert get_base_2(16) == '10000'
+    assert get_base_2('10') == '1010'
+    assert get_base_2('123') == '1111011'
+    assert get_base_2('16') == '10000'
+    assert get_base_2('0') == '0'
 
 def test_is_antipalindrome():
     assert is_antipalindrome(232) is False
